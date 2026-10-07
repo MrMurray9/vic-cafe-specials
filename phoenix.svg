@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Phoenix mark">
+  <!-- Original stylized phoenix for Vic Cafe — school-spirit inspired, not a copied crest -->
+  <defs>
+    <linearGradient id="flame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#8b0000"/>
+      <stop offset="55%" stop-color="#c8102e"/>
+      <stop offset="100%" stop-color="#e63946"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="#ffffff" stroke="#c8102e" stroke-width="4"/>
+  <!-- Body -->
+  <ellipse cx="60" cy="68" rx="14" ry="22" fill="url(#flame)"/>
+  <!-- Head -->
+  <circle cx="60" cy="42" r="10" fill="#c8102e"/>
+  <!-- Beak -->
+  <path d="M70 42 L80 44 L70 48 Z" fill="#8b0000"/>
+  <!-- Eye -->
+  <circle cx="63" cy="40" r="2.2" fill="#ffffff"/>
+  <!-- Crest / flame plume -->
+  <path d="M54 34 C48 22, 52 12, 60 8 C68 12, 72 22, 66 34 C62 28, 58 28, 54 34 Z" fill="#e63946"/>
+  <path d="M58 30 C56 22, 58 16, 62 14 C66 18, 66 24, 62 30 Z" fill="#ffffff" opacity="0.85"/>
+  <!-- Left wing -->
+  <path d="M48 58 C28 48, 14 58, 10 72 C22 68, 34 70, 46 78 C44 70, 46 64, 48 58 Z" fill="#c8102e"/>
+  <path d="M46 62 C32 54, 22 60, 16 70 C26 66, 36 68, 44 74 Z" fill="#e63946"/>
+  <!-- Right wing -->
+  <path d="M72 58 C92 48, 106 58, 110 72 C98 68, 86 70, 74 78 C76 70, 74 64, 72 58 Z" fill="#c8102e"/>
+  <path d="M74 62 C88 54, 98 60, 104 70 C94 66, 84 68, 76 74 Z" fill="#e63946"/>
+  <!-- Tail flames -->
+  <path d="M52 88 C46 100, 50 112, 58 116 C56 104, 56 96, 58 90 Z" fill="#c8102e"/>
+  <path d="M60 90 C58 102, 62 114, 70 118 C68 106, 66 98, 64 90 Z" fill="#e63946"/>
+  <path d="M66 88 C72 100, 70 112, 62 116 C68 104, 68 96, 66 90 Z" fill="#8b0000"/>
+  <!-- Chest highlight -->
+  <ellipse cx="60" cy="66" rx="6" ry="10" fill="#ffffff" opacity="0.25"/>
+</svg>

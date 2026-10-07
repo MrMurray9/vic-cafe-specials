@@ -1,17 +1,19 @@
-/* Vic Cafe specials — phone-first, warm cream/coffee tones */
+/* Vic Cafe specials — phone-first, school red + white */
 :root {
-  --bg: #f6efe6;
-  --fg: #2a1c14;
-  --muted: #7a6456;
-  --card: #fffaf4;
-  --border: #e6d5c4;
-  --accent: #6b3e26;
-  --accent-soft: #f0e0d0;
-  --today: #8b4518;
-  --today-bg: #fff3e6;
-  --today-border: #d4a574;
-  --feature: #3d5a3d;
-  --feature-bg: #eef5ee;
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #5c5c5c;
+  --card: #ffffff;
+  --border: #e8d0d4;
+  --accent: #c8102e;
+  --accent-deep: #8b0000;
+  --accent-soft: #fce8eb;
+  --today: #c8102e;
+  --today-bg: #fff5f6;
+  --today-border: #c8102e;
+  --feature: #c8102e;
+  --feature-bg: #fce8eb;
+  --header-red: #c8102e;
   --radius: 14px;
   --max: 28rem;
   --pad: 1rem;
@@ -20,18 +22,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1a1410;
-    --fg: #f3e8dc;
-    --muted: #b8a090;
-    --card: #241c16;
-    --border: #3d3026;
-    --accent: #e0b090;
-    --accent-soft: #2e2218;
-    --today: #f0c090;
-    --today-bg: #2a2010;
-    --today-border: #6b4a28;
-    --feature: #9bc49b;
-    --feature-bg: #1a241a;
+    --bg: #140808;
+    --fg: #f5f0f0;
+    --muted: #c4a8ac;
+    --card: #1e1012;
+    --border: #4a2428;
+    --accent: #ef4b5f;
+    --accent-deep: #c8102e;
+    --accent-soft: #2a1216;
+    --today: #ef4b5f;
+    --today-bg: #2a1014;
+    --today-border: #c8102e;
+    --feature: #ef4b5f;
+    --feature-bg: #2a1216;
+    --header-red: #ef4b5f;
   }
 }
 
@@ -44,9 +48,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(ellipse at top, #faf3ea 0%, transparent 55%),
-    var(--bg);
+  background: var(--bg);
   color: var(--fg);
   line-height: 1.5;
   font-size: 1.05rem;
@@ -64,26 +66,46 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.phoenix {
+  width: 72px;
+  height: 72px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.brand-text h1 {
+  margin: 0;
+}
+
 .eyebrow {
   margin: 0 0 0.35rem;
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 600;
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .site h1 {
   margin: 0;
   font-size: 2rem;
   letter-spacing: -0.02em;
-  color: var(--accent);
+  color: var(--header-red);
 }
 
 .subtitle {
   margin: 0.25rem 0 0.5rem;
   color: var(--muted);
   font-size: 0.95rem;
+  font-weight: 550;
 }
 
 .date-line {
@@ -99,7 +121,7 @@ body {
   border-radius: var(--radius);
   padding: 1.15rem 1.1rem 1rem;
   margin-bottom: 1.25rem;
-  box-shadow: 0 4px 18px rgba(107, 62, 38, 0.08);
+  box-shadow: 0 4px 18px rgba(200, 16, 46, 0.1);
 }
 
 .today-badge {
@@ -107,7 +129,7 @@ body {
   top: -0.65rem;
   left: 1rem;
   background: var(--today);
-  color: #fffaf4;
+  color: #ffffff;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -116,13 +138,14 @@ body {
   border-radius: 999px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .today-badge { color: #1a1410; }
-}
-
 .today-card h2 {
   margin: 0.35rem 0 0.75rem;
   font-size: 1.2rem;
+  color: var(--accent-deep);
+}
+
+@media (prefers-color-scheme: dark) {
+  .today-card h2 { color: var(--accent); }
 }
 
 .weekend-note {
@@ -158,7 +181,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .specials-list .value {
@@ -194,7 +217,7 @@ body {
 
 .standing-card.feature {
   background: var(--feature-bg);
-  border-color: color-mix(in srgb, var(--feature) 35%, var(--border));
+  border-color: color-mix(in srgb, var(--feature) 40%, var(--border));
 }
 
 .standing-card h3 {
@@ -202,7 +225,7 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .standing-card ul {
@@ -241,6 +264,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--accent-deep);
+}
+
+@media (prefers-color-scheme: dark) {
+  .day-card .day-name { color: var(--accent); }
 }
 
 .day-card .day-name .pill {
@@ -248,13 +276,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   background: var(--today);
-  color: #fffaf4;
+  color: #ffffff;
   padding: 0.15rem 0.45rem;
   border-radius: 999px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .day-card .day-name .pill { color: #1a1410; }
 }
 
 .day-card dl {
@@ -268,7 +292,7 @@ body {
   float: left;
   clear: left;
   width: 4.2rem;
-  color: var(--muted);
+  color: var(--accent);
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -284,7 +308,7 @@ body {
 .site-foot {
   margin-top: 1.75rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--accent);
   text-align: center;
   font-size: 0.88rem;
   color: var(--muted);
@@ -295,8 +319,13 @@ body {
 .site-foot code {
   font-size: 0.85em;
   background: var(--accent-soft);
+  color: var(--accent-deep);
   padding: 0.1rem 0.35rem;
   border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-foot code { color: var(--accent); }
 }
 
 @media (min-width: 480px) {
@@ -305,5 +334,9 @@ body {
   }
   .standing-card.feature {
     grid-column: 1 / -1;
+  }
+  .phoenix {
+    width: 84px;
+    height: 84px;
   }
 }

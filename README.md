@@ -2,6 +2,8 @@
 
 Phone-friendly GitHub Pages hub for **Vic Cafe** (Victoria Cafe) daily specials.
 
+Brand: school **red + white** (`#c8102e`) with an original stylized phoenix mark (`phoenix.svg`) — school-spirit inspired, not a copied crest.
+
 **Live:** https://mrmurray9.github.io/vic-cafe-specials/
 
 ## How daily updates work

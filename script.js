@@ -74,7 +74,7 @@
   }
 
   async function main() {
-    const res = await fetch("menu.json?v=20261007");
+    const res = await fetch("menu.json?v=20261007b");
     if (!res.ok) throw new Error("Could not load menu.json");
     const menu = await res.json();
 
