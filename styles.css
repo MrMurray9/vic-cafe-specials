@@ -75,8 +75,8 @@ body {
 }
 
 .phoenix {
-  width: 88px;
-  height: 88px;
+  width: 96px;
+  height: 115px;
   display: block;
   flex-shrink: 0;
 }
@@ -336,7 +336,7 @@ body {
     grid-column: 1 / -1;
   }
   .phoenix {
-    width: 100px;
-    height: 100px;
+    width: 108px;
+    height: 130px;
   }
 }
