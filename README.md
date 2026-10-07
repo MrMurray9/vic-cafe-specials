@@ -2,7 +2,7 @@
 
 Phone-friendly GitHub Pages hub for **Canvas Cafe** daily specials.
 
-Brand: school **red + white** (`#c8102e`) with an original stylized phoenix mark (`phoenix.svg`) — school-spirit inspired, not a copied crest.
+Brand: school **red + white** (`#c8102e`) with an original fiery phoenix mark (`phoenix.svg`) — school-spirit inspired, not a copied crest.
 
 **Live:** https://mrmurray9.github.io/vic-cafe-specials/
 
