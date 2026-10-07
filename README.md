@@ -1,6 +1,6 @@
-# Vic Cafe · Today’s Specials
+# Canvas Cafe · Today’s Specials
 
-Phone-friendly GitHub Pages hub for **Vic Cafe** (Victoria Cafe) daily specials.
+Phone-friendly GitHub Pages hub for **Canvas Cafe** daily specials.
 
 Brand: school **red + white** (`#c8102e`) with an original stylized phoenix mark (`phoenix.svg`) — school-spirit inspired, not a copied crest.
 
@@ -36,5 +36,6 @@ python3 -m http.server 8080
 |------|------|
 | `index.html` | Layout |
 | `menu.json` | Single source of truth |
-| `styles.css` | Warm café styles (phone-first) |
+| `styles.css` | School red/white styles (phone-first) |
 | `script.js` | Timezone + weekday selection |
+| `phoenix.svg` | Original phoenix mark |
