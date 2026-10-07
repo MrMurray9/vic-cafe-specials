@@ -1,34 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Phoenix mark">
-  <!-- Original stylized phoenix for Canvas Cafe — school-spirit inspired, not a copied crest -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Fiery phoenix">
+  <!-- Original fiery phoenix for Canvas Cafe — school-spirit art, not a copied crest -->
   <defs>
-    <linearGradient id="flame" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#8b0000"/>
-      <stop offset="55%" stop-color="#c8102e"/>
-      <stop offset="100%" stop-color="#e63946"/>
+    <radialGradient id="glow" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#ff6b00" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#c8102e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bodyGrad" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#ffcc33"/>
+      <stop offset="35%" stop-color="#ff6b00"/>
+      <stop offset="70%" stop-color="#c8102e"/>
+      <stop offset="100%" stop-color="#7a0000"/>
     </linearGradient>
+    <linearGradient id="wingL" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe566"/>
+      <stop offset="40%" stop-color="#ff8c00"/>
+      <stop offset="100%" stop-color="#b3001b"/>
+    </linearGradient>
+    <linearGradient id="wingR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe566"/>
+      <stop offset="40%" stop-color="#ff8c00"/>
+      <stop offset="100%" stop-color="#b3001b"/>
+    </linearGradient>
+    <linearGradient id="flameUp" x1="0.5" y1="1" x2="0.5" y2="0">
+      <stop offset="0%" stop-color="#7a0000"/>
+      <stop offset="40%" stop-color="#ff4500"/>
+      <stop offset="75%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#fff4c2"/>
+    </linearGradient>
+    <linearGradient id="tailGrad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#ffcc33"/>
+      <stop offset="50%" stop-color="#ff4500"/>
+      <stop offset="100%" stop-color="#8b0000"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <circle cx="60" cy="60" r="56" fill="#ffffff" stroke="#c8102e" stroke-width="4"/>
-  <!-- Body -->
-  <ellipse cx="60" cy="68" rx="14" ry="22" fill="url(#flame)"/>
-  <!-- Head -->
-  <circle cx="60" cy="42" r="10" fill="#c8102e"/>
-  <!-- Beak -->
-  <path d="M70 42 L80 44 L70 48 Z" fill="#8b0000"/>
-  <!-- Eye -->
-  <circle cx="63" cy="40" r="2.2" fill="#ffffff"/>
-  <!-- Crest / flame plume -->
-  <path d="M54 34 C48 22, 52 12, 60 8 C68 12, 72 22, 66 34 C62 28, 58 28, 54 34 Z" fill="#e63946"/>
-  <path d="M58 30 C56 22, 58 16, 62 14 C66 18, 66 24, 62 30 Z" fill="#ffffff" opacity="0.85"/>
-  <!-- Left wing -->
-  <path d="M48 58 C28 48, 14 58, 10 72 C22 68, 34 70, 46 78 C44 70, 46 64, 48 58 Z" fill="#c8102e"/>
-  <path d="M46 62 C32 54, 22 60, 16 70 C26 66, 36 68, 44 74 Z" fill="#e63946"/>
+
+  <!-- Soft fire aura -->
+  <circle cx="100" cy="100" r="92" fill="url(#glow)"/>
+
+  <!-- Outer flame ring suggestions -->
+  <path d="M100 12 C108 28, 118 34, 128 28 C122 42, 130 52, 142 48 C132 58, 138 72, 150 70 C136 78, 134 92, 144 100 C128 96, 120 108, 122 120" fill="none" stroke="#ff8c00" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <path d="M100 12 C92 28, 82 34, 72 28 C78 42, 70 52, 58 48 C68 58, 62 72, 50 70 C64 78, 66 92, 56 100 C72 96, 80 108, 78 120" fill="none" stroke="#ff8c00" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Tail flames (behind body) -->
+  <g filter="url(#softGlow)">
+    <path d="M88 128 C70 150, 62 178, 78 192 C82 170, 90 152, 98 138 Z" fill="url(#tailGrad)"/>
+    <path d="M100 130 C96 158, 108 182, 124 194 C116 170, 108 150, 106 136 Z" fill="url(#flameUp)"/>
+    <path d="M112 128 C130 150, 142 176, 130 192 C124 170, 116 152, 108 138 Z" fill="url(#tailGrad)"/>
+    <path d="M96 136 C88 160, 94 180, 106 188 C104 168, 102 150, 102 140 Z" fill="#fff4c2" opacity="0.75"/>
+  </g>
+
+  <!-- Left wing — layered fiery feathers -->
+  <g filter="url(#softGlow)">
+    <path d="M86 88 C50 70, 22 78, 10 108 C28 98, 48 102, 70 118 C62 104, 72 94, 86 88 Z" fill="url(#wingL)"/>
+    <path d="M84 94 C56 80, 32 86, 18 108 C34 100, 52 104, 72 116 C68 106, 74 98, 84 94 Z" fill="#ff4500" opacity="0.85"/>
+    <path d="M82 100 C60 90, 40 96, 28 112 C42 106, 56 108, 74 118 C70 110, 74 104, 82 100 Z" fill="#ffcc33" opacity="0.7"/>
+    <!-- feather tips as flames -->
+    <path d="M22 100 C14 94, 8 102, 12 112 C18 106, 20 104, 22 100 Z" fill="#fff4c2"/>
+    <path d="M36 92 C28 84, 18 90, 20 102 C28 96, 32 94, 36 92 Z" fill="#ffb347"/>
+    <path d="M50 86 C44 76, 32 80, 34 94 C42 88, 46 86, 50 86 Z" fill="#ff8c00"/>
+  </g>
+
   <!-- Right wing -->
-  <path d="M72 58 C92 48, 106 58, 110 72 C98 68, 86 70, 74 78 C76 70, 74 64, 72 58 Z" fill="#c8102e"/>
-  <path d="M74 62 C88 54, 98 60, 104 70 C94 66, 84 68, 76 74 Z" fill="#e63946"/>
-  <!-- Tail flames -->
-  <path d="M52 88 C46 100, 50 112, 58 116 C56 104, 56 96, 58 90 Z" fill="#c8102e"/>
-  <path d="M60 90 C58 102, 62 114, 70 118 C68 106, 66 98, 64 90 Z" fill="#e63946"/>
-  <path d="M66 88 C72 100, 70 112, 62 116 C68 104, 68 96, 66 90 Z" fill="#8b0000"/>
-  <!-- Chest highlight -->
-  <ellipse cx="60" cy="66" rx="6" ry="10" fill="#ffffff" opacity="0.25"/>
+  <g filter="url(#softGlow)">
+    <path d="M114 88 C150 70, 178 78, 190 108 C172 98, 152 102, 130 118 C138 104, 128 94, 114 88 Z" fill="url(#wingR)"/>
+    <path d="M116 94 C144 80, 168 86, 182 108 C166 100, 148 104, 128 116 C132 106, 126 98, 116 94 Z" fill="#ff4500" opacity="0.85"/>
+    <path d="M118 100 C140 90, 160 96, 172 112 C158 106, 144 108, 126 118 C130 110, 126 104, 118 100 Z" fill="#ffcc33" opacity="0.7"/>
+    <path d="M178 100 C186 94, 192 102, 188 112 C182 106, 180 104, 178 100 Z" fill="#fff4c2"/>
+    <path d="M164 92 C172 84, 182 90, 180 102 C172 96, 168 94, 164 92 Z" fill="#ffb347"/>
+    <path d="M150 86 C156 76, 168 80, 166 94 C158 88, 154 86, 150 86 Z" fill="#ff8c00"/>
+  </g>
+
+  <!-- Body -->
+  <ellipse cx="100" cy="108" rx="22" ry="34" fill="url(#bodyGrad)"/>
+  <ellipse cx="100" cy="104" rx="10" ry="18" fill="#ffcc33" opacity="0.35"/>
+  <!-- chest flame markings -->
+  <path d="M100 92 C94 100, 94 112, 100 122 C106 112, 106 100, 100 92 Z" fill="#fff4c2" opacity="0.55"/>
+
+  <!-- Neck -->
+  <path d="M92 84 C90 72, 94 60, 100 54 C106 60, 110 72, 108 84 C104 78, 96 78, 92 84 Z" fill="url(#bodyGrad)"/>
+
+  <!-- Head -->
+  <ellipse cx="104" cy="50" rx="14" ry="13" fill="#ff6b00"/>
+  <ellipse cx="106" cy="48" rx="8" ry="7" fill="#ffcc33" opacity="0.45"/>
+  <!-- beak -->
+  <path d="M116 50 L136 54 L116 60 Z" fill="#ffb347"/>
+  <path d="M116 52 L130 54.5 L116 58 Z" fill="#ff4500"/>
+  <!-- eye -->
+  <circle cx="108" cy="46" r="3.2" fill="#1a0505"/>
+  <circle cx="109" cy="45" r="1.1" fill="#fff4c2"/>
+
+  <!-- Crest / head flames -->
+  <g filter="url(#softGlow)">
+    <path d="M96 42 C88 28, 90 14, 100 6 C104 16, 104 28, 102 40 Z" fill="url(#flameUp)"/>
+    <path d="M102 40 C100 24, 108 12, 118 8 C114 20, 112 30, 108 42 Z" fill="#ff4500"/>
+    <path d="M108 42 C112 30, 124 22, 132 24 C124 32, 118 38, 112 46 Z" fill="#ff8c00"/>
+    <path d="M100 36 C98 24, 102 16, 108 12 C108 22, 106 30, 104 38 Z" fill="#fff4c2" opacity="0.85"/>
+  </g>
+
+  <!-- Rising ember sparks -->
+  <circle cx="48" cy="56" r="2.2" fill="#ffcc33" opacity="0.9"/>
+  <circle cx="156" cy="50" r="2" fill="#fff4c2" opacity="0.85"/>
+  <circle cx="40" cy="130" r="1.8" fill="#ff8c00" opacity="0.8"/>
+  <circle cx="164" cy="126" r="2.4" fill="#ffcc33" opacity="0.75"/>
+  <circle cx="72" cy="28" r="1.6" fill="#fff4c2"/>
+  <circle cx="130" cy="22" r="1.8" fill="#ffb347"/>
 </svg>

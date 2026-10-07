@@ -8,7 +8,7 @@ Brand: school **red + white** (`#c8102e`) with an original stylized phoenix mark
 
 ## How daily updates work
 
-No daily republish is needed while the current month’s menu is in force. The page reads `menu.json` and picks soup / savoury / sweet / muffin for **today’s weekday in America/Edmonton**. Standing sandwiches, salad, and feature always show.
+No daily republish is needed while the current month’s menu is in force. The page reads `menu.json` and picks soup / savoury / sweet / muffin for **today’s weekday** (local school timezone). Standing sandwiches, salad, and feature always show.
 
 On Saturday or Sunday the page previews **Monday’s** specials and notes that the café opens Monday.
 
