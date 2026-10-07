@@ -1,0 +1,48 @@
+{
+  "cafe": "Vic Cafe",
+  "cafeFull": "Victoria Cafe",
+  "month": "October",
+  "year": 2026,
+  "timezone": "America/Edmonton",
+  "weekdays": {
+    "Mon": {
+      "soup": "Cream of Mushroom",
+      "savoury": "Mozza and Sage Buns",
+      "sweet": "Rainbow Cookies",
+      "muffin": "Apple Cinnamon"
+    },
+    "Tue": {
+      "soup": "Beef Goulash",
+      "savoury": "Potato, Garlic and Parmesan Kinish",
+      "sweet": "Croissant",
+      "muffin": "Banana Chocolate"
+    },
+    "Wed": {
+      "soup": "Cream of Bacon, Potato and Kale",
+      "savoury": "Soft Pretzels",
+      "sweet": "Checker Board Cake",
+      "muffin": "Strawberry Streusel"
+    },
+    "Thu": {
+      "soup": "Mulligatawny",
+      "savoury": "Green Onion Cakes",
+      "sweet": "Cinnamon Buns",
+      "muffin": "Lemon poppyseed"
+    },
+    "Fri": {
+      "soup": "Cream of Tomato",
+      "savoury": "Empanada",
+      "sweet": "Mixed Berry Scones",
+      "muffin": "Rhubarb Cinnamon"
+    }
+  },
+  "standing": {
+    "sandwiches": [
+      "Turkey and Bacon Club Sandwich (same as Grilled Beef and Bacon Club sandwich)",
+      "Buffalo Chicken Wrap",
+      "Breakfast Sandwich"
+    ],
+    "salad": "Cucumber Salad",
+    "feature": "Greek Chicken Bowl"
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Vic Cafe (Victoria Cafe) — today’s specials: soup, savoury, sweet, muffin, plus standing sandwiches, salad, and feature."/>
+<meta name="color-scheme" content="light dark"/>
+<meta name="theme-color" content="#6b3e26"/>
+<title>Vic Cafe · Today’s Specials</title>
+<link rel="stylesheet" href="styles.css?v=20261007"/>
+<script defer src="script.js?v=20261007"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <p class="eyebrow" id="month-label">October Menu</p>
+    <h1>Vic Cafe</h1>
+    <p class="subtitle">Victoria Cafe · Today’s Specials</p>
+    <p class="date-line" id="date-line" aria-live="polite">Loading…</p>
+  </header>
+
+  <section class="today-card" id="today-card" aria-labelledby="today-heading">
+    <div class="today-badge" id="today-badge">Today</div>
+    <h2 id="today-heading">Today’s specials</h2>
+    <p class="weekend-note" id="weekend-note" hidden></p>
+    <ul class="specials-list" id="today-specials">
+      <li><span class="label">Soup</span> <span class="value" data-key="soup">—</span></li>
+      <li><span class="label">Savoury</span> <span class="value" data-key="savoury">—</span></li>
+      <li><span class="label">Sweet</span> <span class="value" data-key="sweet">—</span></li>
+      <li><span class="label">Muffin</span> <span class="value" data-key="muffin">—</span></li>
+    </ul>
+  </section>
+
+  <section class="standing" aria-labelledby="standing-heading">
+    <h2 id="standing-heading">Always available</h2>
+    <div class="standing-grid">
+      <article class="standing-card">
+        <h3>Sandwiches</h3>
+        <ul id="standing-sandwiches"></ul>
+      </article>
+      <article class="standing-card">
+        <h3>Salad</h3>
+        <p id="standing-salad">—</p>
+      </article>
+      <article class="standing-card feature">
+        <h3>Feature</h3>
+        <p id="standing-feature">—</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="week" aria-labelledby="week-heading">
+    <h2 id="week-heading">This week</h2>
+    <p class="week-hint">Mon–Fri rotation · peek ahead</p>
+    <div class="week-grid" id="week-grid" role="list"></div>
+  </section>
+
+  <footer class="site-foot">
+    <p>Menu updates automatically each weekday (America/Edmonton).</p>
+    <p class="muted">Edit <code>menu.json</code> when a new month’s board arrives.</p>
+  </footer>
+</div>
+</body>
+</html>
