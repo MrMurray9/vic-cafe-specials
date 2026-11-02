@@ -1,39 +1,39 @@
 {
   "cafe": "Canvas Cafe",
   "cafeFull": "Canvas Cafe",
-  "month": "October",
+  "month": "November",
   "year": 2026,
   "timezone": "America/Edmonton",
   "weekdays": {
     "Mon": {
-      "soup": "Cream of Mushroom",
-      "savoury": "Mozza and Sage Buns",
-      "sweet": "Rainbow Cookies",
-      "muffin": "Apple Cinnamon"
+      "soup": "Roasted Red Pepper and Tomato (Vegan)",
+      "savoury": "Cheesy Garlic Buns",
+      "sweet": "Milk Chocolate Sea Salt Cookies with Caramelized Cornflakes",
+      "muffin": "Chai Chocolate Chip"
     },
     "Tue": {
-      "soup": "Beef Goulash",
-      "savoury": "Potato, Garlic and Parmesan Kinish",
-      "sweet": "Croissant",
-      "muffin": "Banana Chocolate"
+      "soup": "French Onion",
+      "savoury": "Parmesan and Caramelized Shallot Scones",
+      "sweet": "Brownies",
+      "muffin": "Orange Blossom"
     },
     "Wed": {
-      "soup": "Cream of Bacon, Potato and Kale",
-      "savoury": "Soft Pretzels",
-      "sweet": "Checker Board Cake",
-      "muffin": "Strawberry Streusel"
+      "soup": "Cream of Broccoli and Cheddar",
+      "savoury": "Soft Pretzel",
+      "sweet": "Cupcakes",
+      "muffin": "Rhubarb Crumble"
     },
     "Thu": {
-      "soup": "Mulligatawny",
+      "soup": "Italian Wedding Soup",
       "savoury": "Green Onion Cakes",
-      "sweet": "Cinnamon Buns",
-      "muffin": "Lemon poppyseed"
+      "sweet": "Triple Chocolate Cookies",
+      "muffin": "Blueberry Oat"
     },
     "Fri": {
-      "soup": "Cream of Tomato",
-      "savoury": "Empanada",
-      "sweet": "Mixed Berry Scones",
-      "muffin": "Rhubarb Cinnamon"
+      "soup": "Cream of Mushroom",
+      "savoury": "Tomato, Spinach and Feta Focaccia",
+      "sweet": "Lemon Bars",
+      "muffin": "Carrot White Chocolate"
     }
   },
   "standing": {
@@ -43,6 +43,6 @@
       "Breakfast Sandwich"
     ],
     "salad": "Cucumber Salad",
-    "feature": "Greek Chicken Bowl"
+    "feature": "Teriyaki Chicken Bowl"
   }
 }
